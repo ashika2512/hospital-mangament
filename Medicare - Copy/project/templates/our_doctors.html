@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+our_doctors page
+{%endblock title %}
+
+{%block body%}
+
+<div class="container mt-3">
+<form action="/our_doctors" method="POST">{% csrf_token %}
+            
+
+
+<body class="text-center">
+   
+   
+   <button type="button" class="btn btn-secondary btn-lg btn-block">OUR DOCTORS</button>
+<br>
+   <!-- Example single info button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    CARDIOLOGIST
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">DR.SURESH KUMAR</a>
+    <a class="dropdown-item" href="#">DR.ROBERT</a>
+    </div>
+</div>
+
+ <!-- Example single info button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    DERMATOLOGIST
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">DR.ANURADHA S </a>
+    <a class="dropdown-item" href="#">DR.ABRAHAM</a>
+    </div>
+</div>
+
+ <!-- Example single info button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    NEUROLOGIST
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">DR.KESHAV RAO</a>
+    <a class="dropdown-item" href="#">DR.RAGHAV</a>
+    </div>
+</div>
+
+ <!-- Example single info button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    DENTIST
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">DR.ASHA BHAT</a>
+    <a class="dropdown-item" href="#">DR.SANJEEV</a>
+    </div>
+</div>
+   <br><br>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="{% static 'images/image3.jpeg' %}" class="d-block w-100" alt="...">
+    </div>
+    
+  </div>
+</div>
+
+{%endblock body%}
+
+
+
+   
+
+
+
+  
+
+  
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

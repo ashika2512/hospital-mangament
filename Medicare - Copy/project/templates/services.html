@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+services page
+{%endblock title %}
+
+{%block body%}
+
+<div class="container mt-3">
+<form action="/services" method="POST">{% csrf_token %}
+            
+
+
+
+<body class="text-center">
+  
+<h3 class="mb-2">SERVICES</h3>
+
+
+<div class="container mt-4">
+<div class="row mb-4">
+
+
+
+    <div class="col-md-8">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">AMBULANCE</strong>
+         
+        
+          <p class="card-text mb-auto">We provide 24/7 ambulance service all over the bangalore.</p>
+            
+          
+
+       
+          
+        </div>
+     
+        <div class="col-auto d-none d-lg-block">
+          <img  class="bd-placeholder-img" src="/static/images/ambulance.jpg">
+ 
+
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+    <div class="row mb-4">
+
+    <div class="col-md-8">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">PHARMACY</strong>
+         
+          
+          <p class="mb-auto">We have pharmacy inside our hospital with all required medicines.</p>
+          
+          
+        </div>
+        <div class="col-auto d-none d-lg-block">
+         <img  class="bd-placeholder-img" src="/static/images/pharmacy.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<div class="container mt-4">
+<div class="row mb-4">
+
+<div class="col-md-8">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-danger">ONLINE SERVICES</strong>
+         
+          
+          <p class="mb-auto">We provide 24/7 online services for our patients .</p>
+          
+          
+        </div>
+        <div class="col-auto d-none d-lg-block">
+         <img  class="bd-placeholder-img" src="/static/images/online services.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card text-white bg-info mb-6" style="max-width: 18rem;">
+  <div class="card-header">OTHER SERVICES</div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text"> --> Health checkup package<br>
+       ---> Security<br>
+       --> Hospital Management Services</p>
+  </div>
+
+
+</div>
+
+{%endblock body%}
+ 

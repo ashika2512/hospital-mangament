@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+appointment page
+{%endblock title %}
+
+{%block body%}
+
+<div class="container mt-3">
+<form action="/appointment" method="POST">{% csrf_token %}
+
+  <img class="mb-2" src="{% static 'images/252.jpeg' %}" width="800" height="400">
+            
+          
+
+<h3><span class="badge badge-primary mb-2">MAKE AN APPOINTMENT</span></h3>
+
+
+            
+
+<input type="text" id="illness" name="illness" class="form-control mt-2 "placeholder="illness" required>
+            
+<input type="text" id="issue" name="issue" class="form-control mt-2 "placeholder="issue" required>
+
+  <input type="text" id="doctor_name" name="doctor_name" class="form-control  mt-2" placeholder="doctor_name" required>
+                      
+
+<br>
+<button class="btn btn-sm btn-primary btn-block"type="submit">submit</button>
+            
+</form>
+
+</div>
+
+{%endblock body%}
+
+
+   
+   

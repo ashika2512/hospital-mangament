@@ -1,0 +1,54 @@
+{% extends 'basic.html' %}
+{% block title %}
+index page
+{% endblock title %}
+{% block body %}
+{% load static %}
+
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/image17.jpeg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>WELCOME TO MEDICARE</h5>
+        <p>The Best Health Care Center.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/image12.jpeg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>BEST MEDICAL PLAN OPTIONS</h5>
+        <p>TURNING TODAY'S DISCOVERIES INTO TOMORROW'S CARE.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/image11.jpeg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>WE CARE ABOUT YOUR HEALTH</h5>
+        <p>A BROAD RANGE OF MEDICAL CONSULTANCY.</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+   <div class="jumbotron">
+  <h1 class="display-4">OUR MISSION</h1>
+  <p class="lead">COMPASSION AND HEALTHCARE - TO PROVIDE QUALITY HEALTHCARE TO THE NEEDY AT AFFORDABLE COSTS .</p>
+  <hr class="my-4">
+  <p>OUR CARE,SERVICES AND TECHNOLOGY ARE OF THE HIGHEST QUALITY.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">LOGIN TO LEARN MORE</a>
+</div> 
+
+{% endblock body %}
